@@ -1,0 +1,14 @@
+{
+  "name": "Google Cloud Platform",
+  "version": "1.0",
+  "description": "Convenience tools for the GCP user interface",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://console.cloud.google.com/kubernetes/pod/*"
+      ],
+      "js": ["copy-kubectl-command.js"]
+    }
+  ]
+}
